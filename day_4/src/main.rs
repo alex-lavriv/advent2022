@@ -44,7 +44,7 @@ fn overlap(section1: (u32, u32), section2: (u32, u32)) -> bool {
     let (a1, _) = section1;
     let (a2, b2) = section2;
 
-    a2 <= a1 && a1 <= b2
+    rra2 <= a1 && a1 <= b2
 }
 
 #[test]
