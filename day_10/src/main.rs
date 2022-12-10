@@ -32,7 +32,6 @@ fn solve2(commands: &Vec<Command>) {
             }
         }
     }
-    draw(cycle_count, register_x);
 }
 
 fn draw(cycle: i32, pos_register: i32) {
