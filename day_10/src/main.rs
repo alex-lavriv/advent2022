@@ -23,14 +23,11 @@ fn solve2(commands: &Vec<Command>) {
             }
             Command::ADDX(v) => {
                 for i in 0..2 {
+                    draw(cycle_count, register_x);
                     if i == 1 {
-                        draw(cycle_count, register_x);
                         register_x += v;
-                        cycle_count += 1;
-                    } else {
-                        draw(cycle_count, register_x);
-                        cycle_count += 1;
                     }
+                    cycle_count += 1;
                 }
             }
         }
