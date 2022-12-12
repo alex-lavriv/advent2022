@@ -5,7 +5,7 @@ use std::collections::VecDeque;
 
 fn main() {
     println!("Hello, world!");
-    let mut monkeys = init();
+    let mut monkeys = init_example();
     for round in 0..20 * monkeys.len(){
         let current_monkey = round % monkeys.len();
         for (item, monkey_n) in monkeys[current_monkey].throw(){
