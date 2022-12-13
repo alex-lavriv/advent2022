@@ -37,7 +37,7 @@ impl Monkey {
         let mut result = Vec::new();
         for &item in &self.items {
 
-            let level = (self.operation)(item).div_floor(3);
+            let level = (self.operation)(item);
             if level % self.divisible_by_test == 0 {
                 result.push((level, self.if_test_true));
             } else {
